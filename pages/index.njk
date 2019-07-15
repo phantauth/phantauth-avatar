@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PhantAuth Avatar</title>
+  <meta name="description" content="PhantAuth Avatar">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="materialize.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
+  <link rel="shortcut icon" href="phantauth-favicon.png" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <div class="parallax-container">
+  <div class="container">
+    <h3 class="white-text center-align">PhantAuth Avatar</h3>
+    <div class="parallax"><img src="background.png"></div>
+
+    <div class="section carousel">
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/051b11d654cc39bb45c0d84761249fc6;male"></a>
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/0ed91aa0874cc66aac6dde6d2db4ebf3;female"></a>
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/d61446eedc2560d899482b508d693b56"></a>
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/6774a3e6a3c5805b1633aa19bbde203f"></a>
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/2728cac1a1fe4171dcd3d5c66a1bb91d"></a>
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/eb535a6c13827284614e0a7a020528ee"></a>
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/495bb7423eb307385fe9d50085aa2bb8"></a>
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/de481e74d936d137e4a7676e6f47b585"></a>
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/9cfc12da1063923456410dd3a51f6f7d"></a>
+      <a class="carousel-item" href="#"><img src="https://{{ config.domain }}/img/avatar/1870636e99dcfb7484ca755fb83873a0"></a>
+    </div>
+    <h4 class="white-text center-align">if all you need is an avatar</h4>
+
+  </div>
+  </div>
+
+<div class="orange lighten-5">
+  <div class="section container">
+    <div class="input-field">
+      <i class="material-icons prefix">edit</i>
+      <input placeholder="name, email or hash" id="identifier" type="text" value="051b11d654cc39bb45c0d84761249fc6;male">
+      <label for="identifier">Identifier</label>
+    </div>
+    <div class="input-field">
+      <i class="material-icons prefix">account_box</i>
+      <input id="url" type="text" data-prefix="https://{{ config.domain }}/img/avatar/" readonly value="https://{{ config.domain }}/img/avatar/051b11d654cc39bb45c0d84761249fc6;male">
+      <label for="url">URL</label>
+    </div>
+    <a id="clipboard-btn" class="waves-effect waves-light btn" data-clipboard-target="#url"><i class="material-icons left">content_copy</i>Copy</a>    
+  </div>
+  </div>
+  <div class="section container">
+    <h5 class="center-align primary-text">What's the PhantAuth Avatar service?</h5>
+    <p>PhantAuth Avatar service returns a human avatar picture URL based on identifier.
+       Identifier can be an email, hash, user name or any other text after <a href="https://{{ config.domain }}/img/avatar/">https://{{ config.domain }}/img/avatar/</a> prefix.
+       Returned URL is generated from identifier in deterministic way.
+       If you ommit the identifier then random profile picture URL will be returned.
+       You can specify the gender of generated image by appending <code>;male</code> or <code>;female</code> to the identifier.
+    </p>
+    <h5 class="center-align">How many avatars are there?</h5>
+    <p>PhantAuth Avatar service currently has over 10,000 different images.
+    </p>
+    <h5 class="center-align">Is PhantAuth Avatar free?</h5>
+    <p>Sure, PhantAuth Avatar is a free open-source non-profit service.
+       If you find this service useful and can afford, please make a small donation as a contribution to the operation costs (domain registration, service hosting, etc.)
+    </p>
+    <p>
+       <a class="waves-effect waves-light btn" href="https://ko-fi.com/Q5Q0T7C7">Ko-fi</a>
+       <a class="waves-effect waves-light btn" href="https://liberapay.com/szkiba/donate">Liberapay</a>
+       <a class="waves-effect waves-light btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VXLCJ3EZRAE7G&source=url">PayPal</a>
+    </p>
+  </div>
+  <div>
+
+   <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">PhantAuth</h5>
+          <p class="grey-text text-lighten-4">PhantAuth Avatar is a side project of <a href="https://www.{{ config.domain }}">PhantAuth</a>.
+             PhantAuth was designed to simplify testing for applications using OpenID Connect authentication by making use of random generated users.
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/phantauth/phantauth-avatar">GitHub repository</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.{{ config.domain }}">PhantAuth Developer Portal</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="footer-copyright"><div class="container">Copyright © 2019 Iván Szkiba</div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
