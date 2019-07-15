@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function getCurrentImg() {
         var index = 0;
         if (carousel) {
-            index = (carousel.center % 10 + 10) % 10
+            index = (carousel.center % 25 + 25) % 25
         }
         return document.querySelector('.carousel').children[index].children[0]
     }
