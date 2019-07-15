@@ -1,0 +1,21 @@
+{
+  "name": "phantauth-avatar",
+  "private": true,
+  "description": "PhantAuth Avatar",
+  "version": "1.0.0",
+  "author": "Iván Szkiba",
+  "dependencies": {},
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "cp src/sass/_variables.scss node_modules/materialize-css/sass/components/; sass --update -s compressed node_modules/materialize-css/sass:public; eleventy"
+  },
+  "devDependencies": {
+    "materialize-css": "^1.0.0-rc.2",
+    "sass": "^1.17.3",
+    "@11ty/eleventy": "^0.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phantauth/phantauth-avatar.git"
+  }
+}
