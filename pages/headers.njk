@@ -1,0 +1,7 @@
+---
+permalink: "_headers"
+---
+/*
+  Access-Control-Allow-Origin: *
+{% if config.domain != "phantauth.net"  %}  X-Robots-Tag: noindex, nofollow{% endif %}
+{% if config.ttl > 0  %}  Cache-Control: public,max-age={{ config.ttl }}{% endif %}
