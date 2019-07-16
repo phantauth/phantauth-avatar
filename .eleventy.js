@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
     passthroughFileCopy: true,
     templateFormats: [
       "njk",
-      "css","png","svg","js"
+      "css","png","svg","js", "json"
       ]
   }
 };

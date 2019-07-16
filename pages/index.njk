@@ -2,13 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>PhantAuth Avatar</title>
-  <meta name="description" content="PhantAuth Avatar">
+  <title>PhantAuth Avatar Service</title>
+  <meta name="description" content="PhantAuth Avatar service returns an AI generated human avatar picture URL based on an identifier which can be an email, hash, username or any other text.">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="materialize.css"  media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
   <link rel="shortcut icon" href="phantauth-favicon.png" />  
+  <link rel="manifest" href="/manifest.json">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#864a05">
+  <meta property="og:title" content="PhantAuth Avatar Service">
+  <meta property="og:site_name" content="PhantAuth Avatar Service">
+  <meta property="og:url" content="https://avatar.phantauth.net">
+  <meta property="og:description" content="PhantAuth Avatar service returns an AI generated human avatar picture URL based on an identifier which can be an email, hash, username or any text.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://avatar.{{ config.domain }}/collage-hex.png">  
 </head>
 
 <body>
@@ -67,7 +75,7 @@
   </div>
   <div class="section container">
     <h5 class="center-align primary-text">What's the PhantAuth Avatar service?</h5>
-    <p>PhantAuth Avatar service returns a human avatar picture URL based on an identifier which can be an email, hash, username or any other text after the
+    <p>PhantAuth Avatar service returns an AI generated human avatar picture URL based on an identifier which can be an email, hash, username or any other text after the
        <a href="https://{{ config.domain }}/img/avatar/">https://{{ config.domain }}/img/avatar/</a> prefix.
        The returned picture URL is generated from the identifier in a deterministic way.
        If you omit the identifier, then a random profile picture URL will be returned.
